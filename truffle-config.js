@@ -7,15 +7,7 @@ module.exports = {
   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
   networks: {
     develop: {
-      port: 8545
-    },
-    terminal: {
-      network_id: 5777,
-      provider: () => new TerminalHttpProvider({
-        host: "http://127.0.0.1:8545",
-        apiKey: "tXlcZoc7pbJU/OhcUxINOA==",
-        source: "Metamask",
-      })
+      port: 7545
     },
   },
 };
