@@ -4,7 +4,7 @@ This dapp connects to [Terminal](https://terminal.co) SDK to generate logs.
 
 ## Note
 
-This is a quick example and contains some bad practices such as hardcoding the API Keys and other env dependent vars.
+This is a quick example and contains some bad practices such as hardcoding the API Keys and other env dependent variables.
 
 ## How it works
 
@@ -22,14 +22,16 @@ First ensure you are in a new and empty directory.
     truffle migrate
     ```
 
-2. In the `client` directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
+2. In `client/public/index.html`, update `YOUR_API_KEY` with your Terminal API Key.
+
+3. In the `client` directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
     ```javascript
     // in another terminal (i.e. not in the truffle develop prompt)
     cd client
     npm run start
     ```
 
-3. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
+4. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
     ```javascript
     // inside the development console.
     test
